@@ -1,0 +1,6 @@
+[package]
+name = "sorts"
+version = "0.1.0"
+authors = ["garrett <pierzynskig@gmail.com>"]
+
+[dependencies]
