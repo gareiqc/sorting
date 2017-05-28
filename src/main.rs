@@ -1,3 +1,4 @@
+mod print_sorted;
 mod bubble;
 
 fn main() {
@@ -8,5 +9,5 @@ fn main() {
                 sortme[i] = a[i];
         }
         bubble::bubble_sort(&mut sortme);
+	//print_sorted::print_array(&mut sortme);
 }
-

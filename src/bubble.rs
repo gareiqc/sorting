@@ -1,6 +1,8 @@
+use print_sorted;
+
 pub fn bubble_sort(a: &mut [i32]){
 	println!("Original array:");
-	print_array(&a);
+	print_sorted::print_array(&a);
 	let mut sorted: bool = true;
 	let mut temp: i32;
 
@@ -21,14 +23,7 @@ pub fn bubble_sort(a: &mut [i32]){
 			} else {
 				println!("{} is bigger than {}, so no swaps are necessary", a[i+1], a[i])
 			}
-			print_array(&a);
+			print_sorted::print_array(&a);
 		}
 	} 
-}
-
-fn print_array(a: & [i32]){
-	for x in a.iter() {
-		print!("{} ", x);
-	}
-	print!("\n");
 }
