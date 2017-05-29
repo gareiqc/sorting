@@ -15,8 +15,7 @@ pub fn insertion_sort(a: &mut [i32]) {
 			temp = a[i+1];
 			println!("{} is less than {}", temp, a[i]);
 			//start from the beginning and find appropriate place to insert
-			// needs to be fixed -- a goes out of scope when we enter inner loop
-			for j in (1..i).rev() {
+			for j in (1..i+1).rev() {
 				if temp < a[j] {
 					a[j+1] = a[j];
 					a[j] = temp;
